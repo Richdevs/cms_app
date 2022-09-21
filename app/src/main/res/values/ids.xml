@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="viewPager2" type="id"/>
+    <item name="tabLayout" type="id"/>
+    <item name="view" type="id"/>
+    <item name="vehEdit" type="id"/>
+    <item name="clientEdit" type="id"/>
+    <item name="phoneEdit" type="id"/>
+    <item name="regEdit" type="id"/>
+    <item name="jobTypeEdit" type="id"/>
+    <item name="ownerPhone" type="id"/>
+    <item name="devtype" type="id"/>
+    <item  name="spinnerdevTitle" type="id"/>
+    <item  name="spinnerInstTitle" type="id"/>
+</resources>

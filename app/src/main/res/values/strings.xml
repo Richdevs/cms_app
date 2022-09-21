@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">ISPY</string>
+    <string name="title_activity_jobs">JobsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="addJob">New Job</string>
+    <string name="myJobs">My Jobs</string>
+    <string name="button">Button</string>
+    <string name="emailAddress"> Email Address</string>
+    <string name="password">Password</string>
+    <string name="no_account_contact_systems_admin">No account? Contact systems admin</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="todo">TODO</string>
+    <string name="appbarTitle">JOB CARDS</string>
+    <string name="summary">View Report</string>
+    <string name="vehReg">Registration No</string>
+    <string name="devType">Device Type</string>
+    <string name="devSerial">Serial/IMEI</string>
+    <string name="jobType">Job Type</string>
+    <string name="vehOwner">Client Name</string>
+    <string name="owner_phone_no">Client Phone</string>
+    <string name="spinnerDevtype">Unit Model</string>
+    <string name="spinnerInsttype">Job Type</string>
+    <string name="instDate">JAN 01 2021</string>
+    <string name="simcard">Simcard</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+</resources>
