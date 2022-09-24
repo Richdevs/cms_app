@@ -30,6 +30,11 @@
     <string name="spinnerInsttype">Job Type</string>
     <string name="instDate">JAN 01 2021</string>
     <string name="simcard">Simcard</string>
+    <string name="subscription">Subscription</string>
+    <string name="imageTitle">Upload Vehicle Image</string>
+    <string name="imageViewName">Vehicle Image</string>
+    <string name="imgBtn">Upload</string>
+    <string name="nextBtn">ADD ACCESSORY</string>
     <!-- TODO: Remove or change this placeholder text -->
 
 

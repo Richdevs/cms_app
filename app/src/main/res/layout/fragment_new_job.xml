@@ -2,8 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_gravity="center"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     tools:context=".MyJobsFragment">
 
     <EditText
@@ -18,9 +18,7 @@
         android:hint="@string/vehOwner"
         android:inputType="text"
         android:paddingStart="10dp"
-        android:paddingEnd="10dp">
-
-    </EditText>
+        android:paddingEnd="10dp" />
 
     <EditText
         android:id="@+id/regEdit"
@@ -37,15 +35,35 @@
         android:importantForAutofill="no"
         android:inputType="text"
         android:paddingStart="10dp"
-        android:paddingEnd="10dp">
+        android:paddingEnd="10dp"/>
 
-    </EditText>
-
+    <TextView
+        android:id="@+id/spinnerInstTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/regEdit"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="-31dp"
+        android:text="@string/spinnerInsttype"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+ <Spinner
+        android:id="@+id/instTypeSpinner"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/spinnerInstTitle"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="-30dp"
+        android:background="@drawable/style_spinner"/>
     <TextView
         android:id="@+id/spinnerdevTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/regEdit"
+        android:layout_alignBottom="@id/instTypeSpinner"
         android:layout_marginStart="14dp"
         android:layout_marginTop="14dp"
         android:layout_marginEnd="14dp"
@@ -63,10 +81,7 @@
         android:layout_marginTop="14dp"
         android:layout_marginEnd="14dp"
         android:layout_marginBottom="-30dp"
-        android:background="@drawable/style_spinner">
-
-    </Spinner>
-
+        android:background="@drawable/style_spinner"/>
     <EditText
         android:id="@+id/devSerial"
         android:layout_width="200sp"
@@ -81,12 +96,10 @@
         android:importantForAutofill="no"
         android:inputType="number"
         android:paddingStart="10dp"
-        android:paddingEnd="10dp">
-
-    </EditText>
-    <EditText 
-    android:id="@+id/simnumber"
-    android:layout_width="200sp"
+        android:paddingEnd="10dp"/>
+ <EditText
+        android:id="@+id/simnumber"
+        android:layout_width="200sp"
         android:layout_height="30dp"
         android:layout_alignBottom="@id/devSerial"
         android:layout_gravity="center"
@@ -94,40 +107,76 @@
         android:layout_marginEnd="14dp"
         android:layout_marginBottom="-40dp"
         android:background="@drawable/edt_background"
-        android:hint="@string/simnumber"
+        android:hint="@string/simcard"
         android:importantForAutofill="no"
-        android:inputType="text"
+        android:inputType="number"
         android:paddingStart="10dp"
-        android:paddingEnd="10dp">
-        </EditText>
-
-    <TextView
-        android:id="@+id/spinnerInstTitle"
-        android:layout_width="wrap_content"
+        android:paddingEnd="10dp"/>
+  <TextView
+        android:id="@+id/subscriptionTitle"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@id/simnumber"
         android:layout_marginStart="14dp"
         android:layout_marginTop="14dp"
         android:layout_marginEnd="14dp"
-        android:layout_marginBottom="-31dp"
-        android:text="@string/spinnerInsttype"
+        android:layout_marginBottom="-30dp"
+        android:text="@string/subscription"
         android:textColor="@color/black"
-        android:textSize="15sp">
-
-    </TextView>
+        android:textSize="15sp" />
 
     <Spinner
-        android:id="@+id/instTypeSpinner"
+        android:id="@+id/subscriptionSpinner"
         android:layout_width="200dp"
         android:layout_height="30dp"
-        android:layout_alignBottom="@id/spinnerInstTitle"
+        android:layout_alignBottom="@id/subscriptionTitle"
         android:layout_marginStart="14dp"
         android:layout_marginTop="14dp"
         android:layout_marginEnd="14dp"
         android:layout_marginBottom="-30dp"
-        android:background="@drawable/style_spinner">
-
-    </Spinner>
-
-
+        android:background="@drawable/style_spinner"/>
+  <TextView
+        android:id="@+id/textImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/subscriptionSpinner"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="-30dp"
+        android:text="@string/imageTitle"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+    <ImageView
+        android:id="@+id/vehicleImage"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:layout_alignBottom="@id/textImageView"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="-181dp"
+        android:background="@drawable/img_border"
+        android:contentDescription="@string/imageViewName"
+        android:elevation="1.0dp"/>
+    <Button
+        android:id="@+id/imgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/vehicleImage"
+        android:layout_alignBottom="@id/textImageView"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="-98dp"
+        android:layout_marginBottom="-47dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/imgBtn"/>
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/vehicleImage"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="-98dp"
+        android:layout_marginBottom="-70dp"
+        android:backgroundTint="@color/primary"
+        android:text="@string/nextBtn"/>
 </RelativeLayout>

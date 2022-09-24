@@ -38,24 +38,31 @@ public class NewJobFragment extends Fragment {
 
         //Code to populate device type spinner
         View view = inflater.inflate(R.layout.fragment_new_job, container, false);
-        String[] values = {"PGL CONTRO", "SPEEDIX", "GLOBAL TRACKER", "HELLIOS ADVANCED", "HELLIOS T", "RUPTELA FM TC04", "RUPTELA FM PRO4",
-                "RUPTELA ECO4+", "RUPTELA ECO4 LIGHT", "TELTONIKA FMB 12O", "TELTONIKA FMB 920",};
+        String[] values = {"HELIOS-ADVANCED", "HELIOS-TT", "FMB-12O", "FMB-920", "FMB-640",
+                "FMB-140", "FMB-125", "FMB-130", "TAT-100"};
         spinner = view.findViewById(R.id.devTypeSpinner);
-        spinner.setPrompt("SELECT DEVICE TYPE");
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(),
                 android.R.layout.simple_spinner_item, values);
         adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        spinner.setPrompt("Select Device");
         spinner.setAdapter(adapter);
 
         //Code to populate Installation type spinner
 
         String[] v = {"NEW INSTALLATION", "TRANSFER", "RE-INSTALLATION"};
         spinner = view.findViewById(R.id.instTypeSpinner);
-        ArrayAdapter<String> adpter = new ArrayAdapter<String>(this.getActivity(), android.R.layout.simple_spinner_item, v);
+        ArrayAdapter<String> adpter = new ArrayAdapter<String>(this.getActivity(), android.R.layout.simple_dropdown_item_1line, v);
         adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-        spinner.setPrompt("SELECT JOB TYPE");
+        spinner.setPrompt("Select Job");
         spinner.setAdapter(adpter);
-
+        //Code to populate Subscription spinner
+        String[] subscriptionValues = {"FLEET", "FULL-ECTS", "ECTS-TIPPER", "FLEET-CANBUS", "FLEET-PROBE"};
+        spinner = view.findViewById(R.id.subscriptionSpinner);
+        ArrayAdapter<String> subscriptionAdapter = new ArrayAdapter<>
+                (this.getActivity(), android.R.layout.simple_dropdown_item_1line, subscriptionValues);
+        adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        spinner.setAdapter(subscriptionAdapter);
+        spinner.setPrompt("Select Subscription");
         return view;
 
 
